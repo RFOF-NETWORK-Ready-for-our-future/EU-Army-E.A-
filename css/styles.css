@@ -1,13 +1,23 @@
-/* Grundlegende Stilregeln - Die Basis der RFOF-Architektur */
+
+/* Globale Variablen - Die universellen Konstanten des RFOF-NETWORKS */
+:root {
+    --primary-blue: #003366;
+    --secondary-blue: #007bff;
+    --light-grey: #f4f4f4;
+    --dark-grey: #333;
+}
+
+/* Grundlegende Stilregeln - Die Basisarchitektur */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', Arial, sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
+    background-color: #fff; /* Hintergrundfarbe wie bei der EIB-Website */
+    color: var(--dark-grey);
 }
 
+/* Container-Layout - Die dezentrale Vernetzung */
 .container {
     width: 90%;
     max-width: 1200px;
@@ -17,10 +27,9 @@ body {
 
 /* Header & Navigation - Das Kontrollzentrum */
 .header {
-    background: #0d1a2f;
+    background-color: var(--primary-blue);
     color: #fff;
-    padding: 1rem 0;
-    border-bottom: #007bff 3px solid;
+    padding: 15px 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -49,17 +58,27 @@ body {
     text-decoration: none;
     text-transform: uppercase;
     font-size: 1rem;
+    font-weight: bold;
 }
 
-/* Hauptinhaltsbereiche - Die Sektionen des SpiderWeb.NET */
-.section-intro, .section-qro, .section-interboxspider, .section-bearmok, .section-pehs, .section-veterans, .section-network, .section-mission, .section-legal {
-    padding: 4rem 0;
+/* Hauptinhaltsbereiche (EIB-inspiriert) - Die Sektionen des SpiderWeb.NET */
+.section-eib {
+    padding: 60px 0;
     text-align: center;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid #eee;
 }
 
-.section-intro {
-    background: #e9ecef;
+.section-eib h2 {
+    font-size: 2.5rem;
+    font-weight: 300;
+    color: var(--primary-blue);
+    margin-bottom: 20px;
+}
+
+.content-block {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
 }
 
 /* Buttons & Links - Schnittstellen der Interaktion */
@@ -74,7 +93,7 @@ body {
 }
 
 .btn-primary {
-    background: #007bff;
+    background: var(--secondary-blue);
 }
 
 .btn-secondary {
@@ -85,13 +104,19 @@ body {
     background: #17a2b8;
 }
 
+.section-link {
+    color: var(--secondary-blue);
+    text-decoration: none;
+    font-weight: bold;
+}
+
 /* Cookie-Banner - Die erste Sicherheitsschicht */
 .cookie-banner {
     position: fixed;
     bottom: 0;
     left: 0;
     width: 100%;
-    background: #333;
+    background: var(--dark-grey);
     color: #fff;
     padding: 15px;
     text-align: center;
@@ -119,11 +144,10 @@ body {
 
 /* Footer - Die Basis des Netzwerks */
 .footer {
-    background: #0d1a2f;
+    background-color: var(--dark-grey);
     color: #fff;
     text-align: center;
     padding: 1rem 0;
-    border-top: #007bff 3px solid;
 }
 
 /* Responsive Design */
@@ -144,72 +168,4 @@ body {
     .navigation ul li {
         margin: 5px 0;
     }
-}
-
-/* Hauptfarben nach EU-Standard */
-:root {
-    --primary-blue: #003366;
-    --secondary-blue: #007bff;
-    --light-grey: #f4f4f4;
-    --dark-grey: #333;
-}
-
-/* Allgemeine Stile */
-body {
-    font-family: 'Segoe UI', Arial, sans-serif;
-    color: var(--dark-grey);
-    background-color: #fff;
-}
-
-/* Header und Navigation */
-.header {
-    background-color: var(--primary-blue);
-    color: #fff;
-    padding: 15px 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.header .logo {
-    color: #fff;
-    font-weight: bold;
-}
-
-.main-nav a {
-    color: #fff;
-    text-transform: uppercase;
-    font-weight: bold;
-}
-
-/* EIB-inspirierte Sektionen */
-.section-eib {
-    background-color: #fff;
-    padding: 60px 0;
-    border-bottom: 1px solid #eee;
-}
-
-.section-eib h2 {
-    font-size: 2.5rem;
-    font-weight: 300;
-    color: var(--primary-blue);
-    margin-bottom: 20px;
-}
-
-.content-block {
-    max-width: 800px;
-    margin: 0 auto;
-    text-align: left;
-}
-
-.section-link {
-    color: var(--secondary-blue);
-    text-decoration: none;
-    font-weight: bold;
-}
-
-/* Footer */
-.footer {
-    background-color: var(--dark-grey);
-    color: #fff;
 }
