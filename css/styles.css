@@ -145,3 +145,71 @@ body {
         margin: 5px 0;
     }
 }
+
+/* Hauptfarben nach EU-Standard */
+:root {
+    --primary-blue: #003366;
+    --secondary-blue: #007bff;
+    --light-grey: #f4f4f4;
+    --dark-grey: #333;
+}
+
+/* Allgemeine Stile */
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    color: var(--dark-grey);
+    background-color: #fff;
+}
+
+/* Header und Navigation */
+.header {
+    background-color: var(--primary-blue);
+    color: #fff;
+    padding: 15px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header .logo {
+    color: #fff;
+    font-weight: bold;
+}
+
+.main-nav a {
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+/* EIB-inspirierte Sektionen */
+.section-eib {
+    background-color: #fff;
+    padding: 60px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.section-eib h2 {
+    font-size: 2.5rem;
+    font-weight: 300;
+    color: var(--primary-blue);
+    margin-bottom: 20px;
+}
+
+.content-block {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.section-link {
+    color: var(--secondary-blue);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Footer */
+.footer {
+    background-color: var(--dark-grey);
+    color: #fff;
+}
