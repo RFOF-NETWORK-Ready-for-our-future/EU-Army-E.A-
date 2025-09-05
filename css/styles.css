@@ -1,0 +1,147 @@
+/* Grundlegende Stilregeln - Die Basis der RFOF-Architektur */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Header & Navigation - Das Kontrollzentrum */
+.header {
+    background: #0d1a2f;
+    color: #fff;
+    padding: 1rem 0;
+    border-bottom: #007bff 3px solid;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .logo {
+    font-size: 1.5rem;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navigation ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+}
+
+.navigation ul li {
+    margin-left: 20px;
+}
+
+.navigation a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1rem;
+}
+
+/* Hauptinhaltsbereiche - Die Sektionen des SpiderWeb.NET */
+.section-intro, .section-qro, .section-interboxspider, .section-bearmok, .section-pehs, .section-veterans, .section-network, .section-mission, .section-legal {
+    padding: 4rem 0;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+.section-intro {
+    background: #e9ecef;
+}
+
+/* Buttons & Links - Schnittstellen der Interaktion */
+.btn {
+    display: inline-block;
+    color: #fff;
+    padding: 10px 20px;
+    margin: 10px 0;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary {
+    background: #007bff;
+}
+
+.btn-secondary {
+    background: #6c757d;
+}
+
+.btn-tertiary {
+    background: #17a2b8;
+}
+
+/* Cookie-Banner - Die erste Sicherheitsschicht */
+.cookie-banner {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: #333;
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+
+.cookie-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.cookie-content p {
+    margin: 0 20px;
+}
+
+.cookie-buttons button {
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    margin: 5px;
+}
+
+/* Footer - Die Basis des Netzwerks */
+.footer {
+    background: #0d1a2f;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    border-top: #007bff 3px solid;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+    }
+
+    .header .navigation {
+        margin-top: 10px;
+    }
+
+    .navigation ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navigation ul li {
+        margin: 5px 0;
+    }
+}
