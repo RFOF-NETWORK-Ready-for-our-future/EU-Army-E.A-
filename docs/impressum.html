@@ -4,54 +4,79 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Impressum</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
 
     <header class="header">
         <div class="container">
-            <a href="/" class="logo">DDEU-Partei</a>
+            <button class="menu-icon">&#9776;</button>
+            <a href="index.html" class="logo">DDEU-Partei</a>
             <nav class="navigation">
-                <ul>
-                    <li><a href="index.html">Zurück zur Startseite</a></li>
+                <ul class="main-nav">
+                    <li><a href="index.html#about">Über uns</a></li>
+                    <li><a href="index.html#vision">Unsere Vision</a></li>
+                    <li><a href="index.html#qro">Quanten-Bereitschaft</a></li>
+                    <li><a href="index.html#interboxspider">InterBOXSpider.NET</a></li>
+                    <li><a href="index.html#veterans">Veteranen-Fonds</a></li>
+                    <li><a href="index.html#careers">Karriere</a></li>
+                    <li><a href="index.html#contact">Kontakt</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
     <main>
-        <section class="section-legal">
+        <section class="section-legal section-eib">
             <div class="container">
                 <h2>Impressum</h2>
-                <p>Angaben gemäß § 5 TMG</p>
-                <p>
-                    [Vollständiger Name des Verantwortlichen oder der Organisation]<br>
-                    [Straße und Hausnummer]<br>
-                    [Postleitzahl und Stadt]<br>
-                    [Land]
-                </p>
-                <h3>Kontakt</h3>
-                <p>
-                    E-Mail: [Ihre E-Mail-Adresse]<br>
-                    Telefon: [Ihre Telefonnummer]
-                </p>
-                <p>
-                    Vertreten durch: [Name des Vertretungsberechtigten]
-                </p>
-                <p>
-                    Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV:<br>
-                    [Name des Verantwortlichen]<br>
-                    [Adresse des Verantwortlichen]
-                </p>
+                <div class="content-block">
+                    <p>Angaben gemäß § 5 TMG</p>
+                    <h3>Verantwortlich</h3>
+                    <p>
+                        **DDEU - Dezentrale Europäische Verteidigung Partei**<br>
+                        Vertreten durch: **Satoramy J.K. (Parteivorsitzender)**<br>
+                        [RFOF-Hauptquartier Straße 42]<br>
+                        [10115] [Berlin], [Deutschland]
+                    </p>
+                    
+                    <h3>Kontakt</h3>
+                    <p>
+                        E-Mail: **[eu-armee@rfof-network.de]**<br>
+                        Telefon: **[+49 (0) 30 123 4567 890]**<br>
+                        Fax: **[+49 (0) 30 123 4567 891]**
+                    </p>
+                    
+                    <h3>Inhaltlich Verantwortlicher</h3>
+                    <p>
+                        Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV:<br>
+                        **Satoramy J.K.**<br>
+                        [RFOF-Hauptquartier Straße 42], [10115 Berlin]
+                    </p>
+                    
+                    <h3>Online-Streitbeilegung (OS)</h3>
+                    <p>
+                        Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit, die Sie unter [https://ec.europa.eu/consumers/odr/] finden.
+                    </p>
+                </div>
             </div>
         </section>
     </main>
 
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2025 DDEU Partei. Alle Rechte vorbehalten.</p>
+            <nav class="footer-nav">
+                <ul>
+                    <li><a href="datenschutzerklaerung.html">Datenschutzerklärung</a></li>
+                    <li><a href="impressum.html">Impressum</a></li>
+                    <li><a href="#" id="open-cookie-settings">Cookie-Einstellungen</a></li>
+                </ul>
+            </nav>
+            <p>&copy; 2025 DDEU-Partei. Alle Rechte vorbehalten.</p>
         </div>
     </footer>
 
+    <script src="../js/main.js"></script>
+    <script src="../js/cookie-consent.js"></script>
 </body>
 </html>
